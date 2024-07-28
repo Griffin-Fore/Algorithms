@@ -452,11 +452,34 @@
     //      I want to return that third value
     // K-   If the value is the first or second place, return that value
 
-    function fibonacci(place) {
-        if(place == 0) {
-            return 0
-        }
-        if(place == 1) {
-            return 1
-        }
-    }
+    // function fibonacci(place) {
+    //     if(place == 0) {
+    //         return 0
+    //     }
+    //     if(place == 1) {
+    //         return 1
+    //     }
+    //     let fibonArr = [0,1]
+    //     for(let i = 1; i < place; i++) {
+    //         fibonArr[i+1] = fibonArr[i-1] + fibonArr[i]
+    //     }
+    //     return fibonArr[fibonArr.length-1]
+    // }
+
+    // console.log(fibonacci(5))
+
+// Implement a function that accepts two non-negative integers as arguments. Function lastDigitAtoB(a,
+// b)​ should return the last digit of the first number (a) raised to an exponent of the second number (b).
+// Examples: given (3, 4)​, you should return 1​ (the last digit of 81: 3 * 3 * 3 * 3). Given (12, 5)​, return
+// 2​ (the least significant digit of 248832, which is 12 * 12 * 12 * 12 * 12).
+
+    // function lastDigitOfPower(a,exp) {
+    //     let power = Math.pow(a,exp)
+    //     let digitString = power.toString()
+    //     let lastDigit = digitString[digitString.length - 1]
+    //     return lastDigit
+    // }
+
+    // console.log(lastDigitOfPower(3,4))
+    // console.log(lastDigitOfPower(3,2))
+
