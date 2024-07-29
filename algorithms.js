@@ -483,3 +483,39 @@
     // console.log(lastDigitOfPower(3,4))
     // console.log(lastDigitOfPower(3,2))
 
+// Clock Hand Angles
+// Traditional clocks are increasingly uncommon, but most can still read rotating hands of hours, minutes,
+// and seconds.
+// Create function clockHandAngles(seconds)​ that, given the number of seconds since 12:00:00, will
+// print the angles (in degrees) of the hour, minute and second hands. As a quick review, there are 360
+// degrees in a full arc rotation. Treat “straight-up” 12:00:00 as 0 degrees for all hands.
+
+    // T-   I have to print the angles in degrees for the second, minute and hour hands of a given time
+    // I-   I want to take every 3600 seconds and set it as one hour, then repeatedly subtract 12 hours to get the hours on the clock,
+    //      Then I want to take every remaining 60 seconds and set those as the minutes, then I want to take what's less than
+    //      60 seconds and set that as the second hand
+
+    function clockHandAngles(seconds) {
+        let initialSeconds = seconds
+        let hours = 0
+        let minutes = 0
+        while(seconds >= 3600) {
+            hours++;
+            seconds -= 3600;
+        }
+        while(seconds >= 60) {
+            minutes++;
+            seconds -= 60;
+        }
+        while(hours >= 12) {
+            hours-=12
+        }
+        let hoursDegrees = hours * 30;
+        let minutesDegrees = minutes * 6
+        let secondsDegrees = seconds * 6
+        return `Clock Hand Angles: Initial seconds: ${initialSeconds}, Hours: ${hours}, Hour angle: ${hoursDegrees},
+        Minutes: ${minutes}, Minute angle: ${minutesDegrees}, Seconds: ${seconds}, Seconds angle: ${secondsDegrees}`
+    }
+
+    console.log(clockHandAngles(43200))
+
