@@ -495,27 +495,49 @@
     //      Then I want to take every remaining 60 seconds and set those as the minutes, then I want to take what's less than
     //      60 seconds and set that as the second hand
 
-    function clockHandAngles(seconds) {
-        let initialSeconds = seconds
-        let hours = 0
-        let minutes = 0
-        while(seconds >= 3600) {
-            hours++;
-            seconds -= 3600;
-        }
-        while(seconds >= 60) {
-            minutes++;
-            seconds -= 60;
-        }
-        while(hours >= 12) {
-            hours-=12
-        }
-        let hoursDegrees = hours * 30;
-        let minutesDegrees = minutes * 6
-        let secondsDegrees = seconds * 6
-        return `Clock Hand Angles: Initial seconds: ${initialSeconds}, Hours: ${hours}, Hour angle: ${hoursDegrees},
-        Minutes: ${minutes}, Minute angle: ${minutesDegrees}, Seconds: ${seconds}, Seconds angle: ${secondsDegrees}`
-    }
+    // function clockHandAngles(seconds) {
+    //     let initialSeconds = seconds
+    //     let hours = 0
+    //     let minutes = 0
+    //     while(seconds >= 3600) {
+    //         hours++;
+    //         seconds -= 3600;
+    //     }
+    //     while(seconds >= 60) {
+    //         minutes++;
+    //         seconds -= 60;
+    //     }
+    //     while(hours >= 12) {
+    //         hours-=12
+    //     }
+    //     let hoursDegrees = hours * 30;
+    //     let minutesDegrees = minutes * 6
+    //     let secondsDegrees = seconds * 6
+    //     return `Clock Hand Angles: Initial seconds: ${initialSeconds}, Hours: ${hours}, Hour angle: ${hoursDegrees},
+    //     Minutes: ${minutes}, Minute angle: ${minutesDegrees}, Seconds: ${seconds}, Seconds angle: ${secondsDegrees}`
+    // }
 
-    console.log(clockHandAngles(43200))
+    // console.log(clockHandAngles(43200))
 
+// PushFront
+// Given an array and an additional value, insert this
+// value at the beginning of the array. Do this
+// without using any built-in array methods.
+
+    // T-   I have to push a value to the front of an array
+    // I-   I want to increast the length of the array by one, and then loop backwards through the array,
+    //      setting the value of each index to the previous value
+    //      I then want to set the first index to the param value
+
+    // function pushFront(arr, val) {
+    //     arr[arr.length] = 0
+    //     for(let i = arr.length - 1; i > 0; i--) {
+    //         arr[i] = arr[i-1]
+    //     }
+    //     arr[0] = val
+    //     return arr
+    // }
+
+    // console.log(pushFront([1,2,3],4))
+
+    
