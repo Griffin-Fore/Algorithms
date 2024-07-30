@@ -763,3 +763,31 @@
     
     // console.log(rotateArr([1,2,3,4],2))
 
+// Min Of Sorted-Rotated
+// You will be given a numerical array that has first
+// been sorted, then rotated by an unknown
+// amount. Find and return the minimum value in
+// that array.
+
+    // T-   I want to take a rotated sorted array and find the minimum value
+    // I-   I want to create a while loop for while the last value is smaller than the first value,
+    //      I want to rotate the array left
+    //      then I want to return the last value
+
+    // function minOfSortedRotated(arr) {
+    //     let front = arr[0]
+    //     let end = arr[arr.length -1]
+    //     while(front > end) {
+    //         let firstValue = arr[0]
+    //         for(let i = 0; i < arr.length -1; i++) {
+    //             arr[i] = arr[i+1]
+    //         }
+    //         arr[arr.length - 1] = firstValue
+    //         front = arr[0]
+    //         end = arr[arr.length - 1]
+    //     }
+    //     return arr[0]
+    // }
+
+    // console.log(minOfSortedRotated([3,4,5,6,1,2]))
+
