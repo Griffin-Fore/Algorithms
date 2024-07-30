@@ -697,4 +697,69 @@
 
     // console.log(skyLine([-1,-7,3,8]))
 
+// Binary Search
+// Given a sorted array and a value, return whether
+// that value is present in the array. Do not
+// sequentially iterate the entire array. Instead,
+// ‘divide and conquer’, taking advantage of the fact
+// that the array is sorted.
+
+    // T-   I need to look through a sorted array to find if a given value is present
+    // I-   I need to create two runners for left and right
+    //      I need to create a while loop for while left is less than or equal to right
+    //          I need to set the middle point as equal to half the distance between left and right
+    //          If mid equals the given value
+    //              I return positive
+    //          If mid is less than the target
+    //              set left to mid plus one
+    //          If mid is greater than the target, set right to mid minus one
+    //      If none of that loop returns the value, return negative one
+
+    // function binarySearch(arr, value) {
+    //     let left = 0
+    //     let right = arr.length - 1
+    //     while(left <= right) {
+    //         mid = Math.floor((left + right ) / 2)
+    //         if(mid == value) {
+    //             return "Value exists"
+    //         }
+    //         else if(mid < value) {
+    //             left = mid + 1
+    //         }
+    //         else {
+    //             right = mid - 1
+    //         }
+    //     }
+    //     return -1
+    // }
+
+    // console.log(binarySearch([1,2,3,4,5,6,7,8,9,10]-5))
+
+// Rotate Array
+// Implement rotateArr(arr, shiftBy)​ that
+// accepts array and offset. Shift arr’s values to the
+// right by that amount. ‘Wrap-around’ any values
+// that shift off array’s end to the other side, so that
+// no data is lost. Operate in-place: given
+// ([1,2,3],1)​, change the array to [3,1,2]​.
+
+    // T-   I want to rotate an array by shifting all the values to the right a given amount, but I can only operate in place
+    // I-   I want to create a loop with the number of times being the given rotate value:
+    //          I want to record the last array value
+    //          then I want to loop backwards setting each index to the value of the next
+    //          then I want to set the first index value to the recorded value
+
+    // function rotateArr(arr, rotateValue) {
+    //     for(let i = 0; i < rotateValue; i++) {
+    //         let lastValue = arr[arr.length - 1];
+    //         for(let ii = arr.length - 1; ii > 0; ii--) {
+    //             arr[ii] = arr[ii-1]
+    //             console.log(arr)
+    //         }
+    //         arr[0] = lastValue
+    //     }
+    //     return arr
+    // }
     
+    // console.log(rotateArr([1,2,3,4],2))
+
