@@ -677,4 +677,24 @@
 // three stories high (but hidden behind the seven-story onbe). You are situated at street level. Return an
 // array containing heights of the buildings you can see, in order. Given [1,-1,7,3]​ return [1,7]​.
     
+    // T-   I need to take an array and return a new array consisting only of array values higher than all the following
+    // I-   I want to create a runner for the tallest starting at zero, and only push indexes to the new array with values 
+    //      higher than the runner, and only push indexes zero or higher
+
+    // function skyLine(arr) {
+    //     let tallest = arr[0]
+    //     let visibleBuildings = []
+    //     for(let i = 0; i < arr.length; i++) {
+    //         if(arr[i] > tallest) {
+    //             tallest = arr[i]
+    //             if(tallest >= 0) {
+    //                 visibleBuildings.push(tallest)
+    //             }
+    //         }
+    //     }
+    //     return visibleBuildings
+    // }
+
+    // console.log(skyLine([-1,-7,3,8]))
+
     
