@@ -540,4 +540,141 @@
 
     // console.log(pushFront([1,2,3],4))
 
+// PopFront
+// Given an array, remove and return the value at
+// the beginning of the array. Do this without using
+// any built-in array methods except pop()​.
+
+    // T-   I need to remove the first value of an array and return that value
+    // I-   I want to assign a variable the value of the first array index
+    //      Then I want to loop forwards through the array and assign each index to the next value
+    //      Then I want to remove the last value
+    
+    // function popFront(arr) {
+    //     let firstVal = arr[0]
+    //     for(let i = 0; i < arr.length - 1; i++) {
+    //         arr[i] = arr[i+1]
+    //     }
+    //     arr.pop()
+    //     return `Array: ${arr}, First Value: ${firstVal}`
+    // }
+
+    // console.log(popFront([1,2,3,4]))
+
+// InsertAt
+// Given an array, index, and additional value, insert
+// the value into the array at the given index. Do this
+// without using built-in array methods. You can
+// think of PushFront(arr,val)​ as equivalent to
+// InsertAt(arr,0,val)​.
+
+    // T-   I want to take an array, an index, and a value, and insert that value at that index
+    // I-   I want to add one to the length of the array,
+    //      Then I want to loop backwards through the array until the given index, setting each index to the value of the previous,
+    //      then I want to set the given index to the given value, then I want to return the array
+    // Edge-If the index is out of bounds
+    
+    // function insertAt(arr,index,val) {
+    //     arr[arr.length] = 0
+    //     for(let i = arr.length - 1; i >= index; i--) {
+    //         arr[i] = arr[i-1]
+    //     }
+    //     arr[index] = val
+    //     return arr
+    // }
+
+    // console.log(insertAt([1,2,3,4,5],5,6))
+
+// RemoveAt
+// Given an array and an index into the array,
+// remove and return the array value at that index.
+// Do this without using any built-in array methods
+// except pop()​. Think of PopFront(arr)​ as
+// equivalent to RemoveAt(arr,0).
+
+    // T-   I want to remove and return a value at a given index in a given array
+    // I-   I want to create a variable with the value of the given index
+    //      then I want to loop forwards through the array from the index and assign the value of each index to the next value
+    //      then I want to return the given index value and the array
+
+    // function removeAt(arr,index) {
+    //     let removedVal = arr[index];
+    //     for(let i = index; i < arr.length-1; i++) {
+    //         arr[i] = arr[i+1]
+    //     }
+    //     arr.pop()
+    //     return `Array: ${arr}, Index: ${removedVal}`
+    // }
+
+    // console.log(removeAt([1,2,3,4,5,6],3))
+
+// Reverse Array
+// Given a numerical array, reverse the order of the
+// values. The reversed array should have the same
+// length, with existing elements moved to other
+// indices so that the order of elements is reversed.
+
+    // T-   I want to reverse an array in place, meaning I want to swap all the array values
+    // I-   I want to loop forwards to the halfway point of the array, and in the loop,
+    //      I want to swap the current and last minus current index of the array
+    //      Then I want to return the reversed array
+
+    // function reverseArr(arr) {
+    //     for(let i = 0; i < Math.floor(arr.length / 2); i++) {
+    //         let temp = arr[i]
+    //         arr[i] = arr[arr.length - 1 - i]
+    //         arr[arr.length - 1 - i] = temp
+    //     }
+    //     return arr
+    // }
+
+    // console.log(reverseArr([1,2,3,4,5]))
+
+// Remove Negatives
+// Implement a function removeNegatives()​ that
+// accepts an array and removes any values that
+// are less than zero.
+// Second-level challenge: ​don’t use nested loops.
+
+    // T-   I want to take an array and in place remove negative values
+    // I    I want to loop through the array, and every time I have a negative value,
+    //      loop forwards through the array from the place of the negative,
+    //          set each index to the value of the next
+    //          remove the last index
+    //      then return the array
+
+    // function removeNegatives(arr) {
+    //     for(let i = 0; i < arr.length; i++) {
+    //         if(arr[i] < 0) {
+    //             for(let ii = i; ii < arr.length-1; ii++) {
+    //                 arr[ii] = arr[ii+1]
+    //             }
+    //             arr.pop()
+    //         }
+    //     }
+    //     return arr
+    // }
+
+    // console.log(removeNegatives([1,-1,2,-2,3,-3]))
+
+    // Alternately, remove negatives by creating a new array:
+
+    // function removeNegatives(arr) {
+    //     let positivesOnlyArr = []
+    //     for(let i = 0; i < arr.length; i++) {
+    //         if(arr[i] >= 0) {
+    //             positivesOnlyArr.push(arr[i])
+    //         }
+    //     }
+    //     return positivesOnlyArr
+    // }
+
+    // console.log(removeNegatives([-1,-2,-3,-4,-5,-6,-1]))
+
+// Skyline Heights
+// You are given an array with heights of consecutive buildings in the city. For example, [-1,7,3]​ would
+// represent three buildings: first is actually below street level, second is seven stories high, and third is
+// three stories high (but hidden behind the seven-story onbe). You are situated at street level. Return an
+// array containing heights of the buildings you can see, in order. Given [1,-1,7,3]​ return [1,7]​.
+    
     
