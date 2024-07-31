@@ -791,3 +791,19 @@
 
     // console.log(minOfSortedRotated([3,4,5,6,1,2]))
 
+// Second-to-Last
+// Return the second-to-last element of an array.
+
+    // T-   I want to return the second to last item from an array
+    // I-   I want to return the arr[arr.length - 2]
+    // Edge-If the array has less than two items, return "Array too short"
+
+    // function returnSecondToLastArrayValue(arr) {
+    //     if(arr.length < 2) {
+    //         return "Array too short"
+    //     }
+    //     return arr[arr.length - 2]
+    // }
+
+    // console.log(returnSecondToLastArrayValue([1,2,3]))
+
