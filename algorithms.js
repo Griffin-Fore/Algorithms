@@ -807,3 +807,17 @@
 
     // console.log(returnSecondToLastArrayValue([1,2,3]))
 
+// Nth-to-Last
+// Return the element that is N-from-array’s-end.
+
+    // T-   I am supposed to return the nth from last array value
+
+    // function returnNthFromLastArrayValue(arr,n) {
+    //     if(arr[arr.length - 1 - n]) {
+    //         return arr[arr.length - 1 - n]
+    //     }
+    //     return "N out of bounds"
+    // }
+
+    // console.log(returnNthFromLastArrayValue([1,2,3,4,5],5))
+
