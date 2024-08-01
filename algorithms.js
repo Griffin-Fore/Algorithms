@@ -908,12 +908,28 @@
     // T-   I want to take a number and return the factorial
     // I-   I want to loop and in each loop multiply the last value by the current
 
-    function fasterFactorial(place) {
-        let factor = 1
-        for(let i = 1; i <= place; i++) {
-            factor *= i
-        }
-        return factor
-    }
+    // function fasterFactorial(place) {
+    //     let factor = 1
+    //     for(let i = 1; i <= place; i++) {
+    //         factor *= i
+    //     }
+    //     return factor
+    // }
 
-    console.log(fasterFactorial(4))
+    // console.log(fasterFactorial(4))
+
+// Shuffle
+// Recreate the shuffle()​built into JavaScript, to
+// efficiently shuffle a given array’s values. Do you
+// need to return anything from your function?
+
+    // function shuffle(arr) {
+    //     for (let i = arr.length - 1; i > 0; i--) {
+    //         const j = Math.floor(Math.random() * (i + 1));
+    //         [arr[i], arr[j]] = [arr[j], arr[i]];
+    //     }
+    //     return arr;
+    // }
+
+    // console.log(shuffle([1,2,3,4,5,6,7,8,9]))
+
