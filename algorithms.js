@@ -989,4 +989,38 @@
 
     // console.log(fibonacci(3))
 
-    
+// Tricky Tribonacci
+// Why stop with fibonacci? Create a function to
+// retrieve a “tribonacci” number, from the sum of
+// the previous 3. Tribonaccis are {0, 0, 1, 1, 2, 4, 7,
+// 13, 24, 44, 81, ...}. Again, use a time-space
+// tradeoff to make this fast.
+
+    // I want to take a place and return the tribonacci value
+    // I want to create four runners,
+    // then I want to create a for loop where I set each runner to the value of the next
+
+    // function tribonacci(place) {
+    //     if(place == 0) {
+    //         return 0
+    //     }
+    //     if(place == 1) {
+    //         return 0
+    //     }
+    //     if(place == 2) {
+    //         return 1
+    //     }
+    //     let fib1 = 0
+    //     let fib2 = 0
+    //     let fib3 = 1
+    //     let fib4
+    //     for(let i = 3; i <= place; i++) {
+    //         fib4 = fib1 + fib2 + fib3
+    //         fib1 = fib2
+    //         fib2 = fib3
+    //         fib3 = fib4
+    //     }
+    //     return fib4
+    // }
+
+    // console.log(tribonacci(5))
