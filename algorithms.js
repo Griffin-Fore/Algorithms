@@ -821,3 +821,52 @@
 
     // console.log(returnNthFromLastArrayValue([1,2,3,4,5],5))
 
+// Second-Largest
+// Return the second-largest element of an array.
+    
+    // T-   I need to return the second largest item in an array
+    // I-   I want to sort the array:
+    //      I want to set a runner for the minimum value
+    //      I want to find the minimum value, and set it to the first index
+    //      I want to successively loop from each point one forward every time I set the current minimum runner to 
+    //      the next value from the front
+    //      Then I want to return the second last value
+
+    // function returnTheSecondLargestArrayValue(arr) {
+    //     if(arr.length < 2) {
+    //         return "Invalid: Array too short."
+    //     }
+    //     const n = arr.length;
+    //     for(let i = 0; i < n - 1; i++) {
+    //         for(let j = 0; j < n - i - 1; j++) {
+    //             if(arr[j] > arr[j+1]) {
+    //                 [arr[j], arr[j+1]] = [arr[j+1], arr[j]]
+    //             }
+    //         }
+    //     }
+    //     return arr[arr.length - 2]
+    // }
+
+    // console.log(returnTheSecondLargestArrayValue([1,4,2,4,3]))
+
+// Nth-Largest
+// Given an array, return the Nth-largest element:
+// there should be (N - 1) elements that are larger.
+
+    // function returnTheNthLargestElementFromTheArray(arr,nth) {
+    //     if(arr.length <= nth) {
+    //         return "Invalid: N out of bounds"
+    //     }
+    //     const n = arr.length;
+    //     for(let i =  0; i < n - 1; i++) {
+    //         for(let j = 0; j < n - i - 1; j++) {
+    //             if(arr[j] > arr[j+1]) {
+    //                 [arr[j], arr[j+1]] = [arr[j+1], arr[j]]
+    //             }
+    //         }
+    //     }
+    //     return arr[arr.length - 1 - nth]
+    // }
+
+    // console.log(returnTheNthLargestElementFromTheArray([1,2,4,5,3],2))
+
