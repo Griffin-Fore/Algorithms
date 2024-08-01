@@ -958,3 +958,35 @@
 
     // console.log(iSigma(1))
 
+// Fabulous Fibonacci
+// Use a time-space tradeoff to accelerate the
+// average running time of an iFibonacci(num)
+// function that returns the ‘num’th number in the
+// Fibonacci sequence. Recall: fib(0) = 0, fib(1) = 1,
+// fib(2) = 1, fib(3) = 2.
+
+    // T-   I want to take a place and return the fibonacci value for that place
+    // I-   I want to create a three runners for the first, second and third value and a for loop
+    //          inside: I want to set the value of the third as equal to the previous two
+
+    // function fibonacci(place) {
+    //     if(place == 0) {
+    //         return 0
+    //     }
+    //     if(place == 1) {
+    //         return 1
+    //     }
+    //     let fib1 = 0
+    //     let fib2 = 1
+    //     let fib3
+    //     for(let i = 0; i < place; i++) {
+    //         fib3 = fib1 + fib2
+    //         fib1 = fib2
+    //         fib2 = fib3
+    //     }
+    //     return fib3
+    // }
+
+    // console.log(fibonacci(3))
+
+    
