@@ -870,3 +870,50 @@
 
     // console.log(returnTheNthLargestElementFromTheArray([1,2,4,5,3],2))
 
+// arrConcat
+// Replicate JavaScript’s concat()​. Create a
+// standalone function that accepts two arrays.
+// Return a new array containing the first array’s
+// elements, followed by the second array’s
+// elements. Do not alter the original arrays. Ex.:
+// arrConcat( ['a','b'], [1,2] )​ should
+// return ['a','b',1,2]​.
+
+    // T-   I want to take two arrays and put them together
+    // I-   I want to initialize a new array, then I want to loop through the first array and add all elements to a new array,
+    // //      then loop through the second array and add all elements to the new array
+
+    // function arrConcat(arr1,arr2) {
+    //     let concatArr = [];
+    //     for(let i = 0; i < arr1.length; i++) {
+    //         concatArr.push(arr1[i])
+    //     }
+    //     for(let ii = 0; ii < arr2.length; ii++) {
+    //         concatArr.push(arr2[ii])
+    //     }
+    //     return concatArr
+    // }
+
+    // console.log(arrConcat([1,2,3],['a','b','c']))
+
+// Faster Factorial
+// Remember iFactorial from last chapter? Take
+// that implementation and use a time-space
+// tradeoff to accelerate the average running time.
+// Recall that iFactorial(num) returns the product of
+// positive integers from 1 to the given num. For
+// example: fact(1)​ = 1, fact(2)​ = 2, fact(3)
+// = 6. For these purposes, fact(0)​ = 1.
+
+    // T-   I want to take a number and return the factorial
+    // I-   I want to loop and in each loop multiply the last value by the current
+
+    function fasterFactorial(place) {
+        let factor = 1
+        for(let i = 1; i <= place; i++) {
+            factor *= i
+        }
+        return factor
+    }
+
+    console.log(fasterFactorial(4))
