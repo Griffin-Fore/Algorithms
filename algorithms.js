@@ -933,3 +933,28 @@
 
     // console.log(shuffle([1,2,3,4,5,6,7,8,9]))
 
+// Smarter Sum
+// Use a time-space tradeoff to accelerate the
+// average running time of an iSigma(num) function
+// that returns the sum of all positive integers from 1
+// to num. Recall: sig(1) = 1, sig(2) = 3, sig(3) = 6,
+// sig(4) = 10.
+
+    // T-   I want to return the sum of all positive integers from 1 to the given number
+    // I-   I want to initialize the sum, then create a for loop
+    //          I want to add each number to the sum
+    //      then I return the sum
+
+    // function iSigma(numParam) {
+    //     if(numParam <= 0) {
+    //         return "Invalid: number must be at least 1"
+    //     }
+    //     let sum = 0
+    //     for(let i = 1; i <= numParam; i++) {
+    //         sum += i
+    //     }
+    //     return sum
+    // }
+
+    // console.log(iSigma(1))
+
