@@ -1024,3 +1024,203 @@
     // }
 
     // console.log(tribonacci(5))
+
+// The “Buggy 13” (#1)
+// Below are solutions to the “Basic 13” algorithms. Unfortunately, some of these solutions contain errors.
+// Which ones have bugs, and what are they?
+// Print1To255()
+// Print all the integers from 1 to 255.
+
+    // function print1to255()
+    // {
+    //     var num = 1;
+    //     while (num < 255) {
+    //     console.log(num);
+    //     num = num + 1;
+    //     }
+    // }
+
+    // console.log(print1to255())
+    // num won't reach 255
+
+// PrintIntsAndSum0To255()
+// Print integers from 0 to 255, and the sum so far.
+    
+    // function printSum0to255()
+    // {
+    //     var sum = 0;
+    //     for(var num = 0;num <= 255;num++)
+    //     { sum += num; }
+    //     return sum;
+    // }
+
+    // console.log(printSum0to255())
+    // Does not print sum
+
+// PrintMaxOfArray(arr)
+// Print the largest element in a given array.
+    
+    // function printArrayMax(arr) {
+    //     if (arr.length == 0) {
+    //         console.log("[], no max val.");
+    //         return;
+    //     }
+    //     var max = 0;
+    //     for (var idx = 0; idx < arr.length; idx++) {
+    //         if (arr[idx] > max)
+    //         { max = arr[idx]; }
+    //     }
+    //     console.log("Max value is:", max);
+    // }
+
+    // Errors:
+    // max should be arr[0], not 0
+
+// PrintOdds1To255()
+// Print all odd integers from 1 to 255.
+    // function printOdds1to255()
+    // {
+    //     var num = 1;
+    //     while (num <= 255)
+    //     {
+    //     console.log(num + 2);
+    //     }
+    // }
+
+    // Errors:
+    // num doesn't increase
+
+// PrintArrayVals(arr)
+// Print all values in a given array.
+    // function printArrayValues(arr) {
+    //     for var idx = 0;idx < arr.length;
+    //     arr++) {
+    //     console.log("array[", idx,"] =",arr[idx]);
+    //     }
+    // }
+
+    // Errors:
+    // No parenthesis for the for loop
+    // the iterator in the loop is arr++0
+
+// PrintAverageOfArray(arr)
+// Analyze an array’s values and print the average.
+    // arr = [1,4,7,2,5,8];
+    // if (arr.length == 0) {
+    //     console.log("[ ], no avg val.");
+    //     return;
+    // }
+    // var sum = arr[0];
+    // for (var idx = 1; idx < arr.length;
+    //     idx++) {
+    //     sum += arr[idx];
+    // }
+    // console.log("Avg val:", sum/arr.length);
+
+    // Errors:
+    // No function
+    // sum = arr[0] when it should be 0
+    // idx starts at 1 when it should start at 0
+
+// ReturnOddsArray1To255()
+// Create & return array with odd integers 1-255.
+    // function oddArray1to255() {
+    //     var oddArray = [];
+    //     for (var num = 1; num <= 255;
+    //     num += 2)
+    //     { oddArray.push(num); }
+    // }
+    
+    // Errors:
+    // No return
+
+// ReturnArrayCountGreaterThanY(arr, y)
+// Given an array, return count greater than Y.
+    // function numGreaterThanY(arr, y) {
+    //     var numGreater = 0;
+    //     for(var idx = 0; idx < arr.length;
+    //     idx++) {
+    //         if (arr[idx] > y)
+    //         { numGreater++; }
+    //     }
+    //     return arr[y];
+    // }
+
+    // Errors:
+    // the return is arr[y], when it should be numGreater
+
+// PrintMaxMinAverageArrayVals(arr)
+// Print the max, min and average array values.
+    // function maxMinAverage(arr) {
+    //     if (arr.length == 0) { return; }
+    //     var min = arr[0];
+    //     var max = arr[0];
+    //     var sum = arr[0];
+    //     for (var idx=1; idx <= arr.length;
+    //     idx++) {
+    //         if (arr[idx] < min)
+    //         { min = arr[idx]; }
+    //         if (arr[idx] > max)
+    //         { max = arr[idx]; }
+    //         sum += arr[idx];
+    //     }
+    //     return min;
+    //     return max;
+    //     return avg;
+    // }
+
+    // Errors:
+    // the for loop endpoint is arr.length when it should be one less than arr.length
+    // there is no avg: it should be sum / arr.length but the calculation is not there
+
+// SquareArrayVals(arr)
+// Given an array, square each value in the array.
+    // function squareArrVals(arr) {
+    //     for (var idx = 0;idx < arr.length;
+    //         idx++){
+    //         arr[idx] = arr[idx] + arr[idx];
+    //     }
+    // }
+
+    // Errors:
+    // the calculation in the loop doubles, not squares
+    // There is no return of arr
+
+// ZeroOutArrayNegativeVals(arr)
+// Given an array, set negative values to zero.
+    // setNegsToZero(arr) {
+    //     for (var idx = 0;idx < arr.length;
+    //     idx++){
+    //     if (arr[idx] < 0){ arr[idx]=0; }
+    //     }
+    // }
+
+    // Errors:
+    // There is no return of arr
+
+// ShiftArrayValsLeft(arr)
+// Shift array values forward, leaving '0'​ at end.
+    // function arrShift(arr) {
+    //     for (var idx = 1;idx < arr.length;
+    //     idx++){
+    //         arr[idx - 1] = arr[idx];
+    //     }
+    //     arr.length--;
+    //     return arr;
+    // }
+
+    // Errors:
+    // arr.length-- doesn't work, should be arr[arr.length-1] = 0
+
+// SwapStringForArrayNegativeVals(arr)
+// Replace negative array values with 'Dojo'​.
+    // function subStringForNegs(arr) {
+    //     for (var idx = 0;idx < arr.length;idx++){
+    //     if(idx < 0) {arr[idx]="Dojo"}
+    //     }
+    //     return arr;
+    // }
+    
+    // Errors:
+    // the if statement is if idx < 0; it should be if arr[idx] < 0
+
