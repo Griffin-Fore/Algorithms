@@ -1249,3 +1249,21 @@
 
     // console.log(marpTwoArrays(["a","b","c"],[1,2,null]))
 
+// InvertHash
+// Create invertHash(assocArr) that converts a hash’s keys to values and values to corresponding keys.
+// Example: given {"name": "Zaphod"; "numHeads": 2}​, return {"Zaphod": "name"; 2:
+// "numHeads"}​. You will need to learn and use a JavaScript for ... in​ h​ere!
+
+    // T-   I want to take a hash map and swap the keys and values
+    // I-   I need to take a for in loop and swap each key and value
+
+    // function invertHash(obj) {
+    //     let swapped = {}
+    //     for(key in obj) {
+    //         swapped[obj[key]] = key
+    //     }
+    //     return swapped
+    // }
+
+    // console.log(invertHash({"a": 1, "b": 2, "c": 3}))
+
