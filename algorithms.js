@@ -1290,3 +1290,29 @@
 
     // console.log(reverseString("String"))
 
+// Remove Blanks
+// Create a function that, given a string, returns the string, without blanks. Given " play that
+// Funky Music "​, returns a string containing "playthatFunkyMusic"​.
+
+    // T-   I want to take a string and remove the spaces from it
+    // I-   I want to split the string into an array,
+    //      then I want to create a for loop and iterate through the array
+    //          every time I encounter a space, I want to loop forwards through the array,
+    //              and set each value equal to the next value,
+    //          then remove the last index from the array
+
+    // function removeBlanks(string) {
+    //     let arr = string.split("")
+    //     for(let i = 0; i< arr.length; i++) {
+    //         if(arr[i] == " ") {
+    //             for(let ii = i; ii < arr.length - 1; ii++) {
+    //                 arr[ii] = arr[ii+1]
+    //             }
+    //             arr.pop()
+    //         }
+    //     }
+    //     return arr.join("")
+    // }
+
+    // console.log(removeBlanks(" play that Funky Music "))
+
