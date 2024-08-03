@@ -1267,3 +1267,26 @@
 
     // console.log(invertHash({"a": 1, "b": 2, "c": 3}))
 
+// ReverseString
+// Implement a function reverseString(str) that, given a string, will return the string of the same length but
+// with characters reversed. Example: given "creature"​, return "erutaerc"​. Do not use the built-in
+// reverse()​ function!
+
+    // T-   I want to reverse a string
+    // I-   I want to turn the string into an array, for loop to the halfway point of the array,
+    //          and at each step I want to switch the current index with the index equally far from the back,
+    //      then I want to join the array
+
+    // function reverseString(string) {
+    //     let arr = string.split('')
+    //     halfwayPoint = Math.floor(arr.length / 2)
+    //     for(let i = 0; i <= halfwayPoint; i++) {
+    //         temp = arr[i]
+    //         arr[i] = arr[arr.length - i - 1]
+    //         arr[arr.length - i - 1] = temp
+    //     }
+    //     return arr.join('')
+    // }
+
+    // console.log(reverseString("String"))
+
