@@ -1224,3 +1224,28 @@
     // Errors:
     // the if statement is if idx < 0; it should be if arr[idx] < 0
 
+// Arrs2Map
+// Given two arrays, create an associative array (map) containing keys of the first, and values of the
+// second. For arr1 = ["abc", 3, "yo"]​ and arr2 = [42, "wassup", true]​, return {"abc":
+// 42, 3: "wassup", "yo": true}​.
+
+    // T-   I want to take two arrays and turn them into key-value pairs of a new associative array
+    // I-   I want to instantiate an associative array
+    //      then I want to create a for loop, and in the loop I want to set the key to the value in the index of the first array, 
+    //      and the value to the value of the index of the second array
+    //      then I want to return the new associative array
+    // Edge:I want to return "Invalid" if the arrays are different lengths
+
+    // function marpTwoArrays(arr1,arr2) {
+    //     if(arr1.length !== arr2.length) {
+    //         return "Invalid: Arrays different lengths"
+    //     }
+    //     let assocArr = {}
+    //     for(let i = 0; i < arr1.length; i++) {
+    //         assocArr[arr1[i]] = arr2[i]
+    //     }
+    //     return assocArr
+    // }
+
+    // console.log(marpTwoArrays(["a","b","c"],[1,2,null]))
+
