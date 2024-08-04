@@ -1362,3 +1362,46 @@
     // }
 
     // console.log(acronymMaker("there's no free lunch - gotta pay yer way"))
+
+    
+// Parens Valid
+// Create a function that, given an input string,
+// returns a boolean whether parentheses in that
+// string are valid. Given input "y(3(p)p(3)r)s"​,
+// return true. Given "n(0(p)3"​, return false​.
+// Given "n)0(t(0)k"​, return false​.
+
+    // T-   I want to take a string and check to see if the parenthesis are valid
+    // I-   I want to instantiate a count for current total of open and closed parentheses and a minimum, 
+    //      and I want to loop through the string,
+    //          and every time the parenthesis is closing, I subtract one from the minimum
+    //          and if the minimum goes below zero, I return false
+    //          and every time the parenthesis is open, I add one to the total count,
+    //          and every time the parenthesis is closed, I subtract one from the count
+    //      and once I finish the loop, if the total number is not zero, I return false
+    //      otherwise I return true
+
+    // function parenthesisValidator(string) {
+    //     let minimum = 0
+    //     let openAndClosed = 0
+    //     for(let i = 0; i < string.length; i++) {
+    //         if(string[i] == ")") {
+    //             minimum--
+    //             openAndClosed--
+    //         }
+    //         if(string[i] == "(") {
+    //             minimum++
+    //             openAndClosed++
+    //         }
+    //         if(minimum < 0) {
+    //             return false
+    //         }
+    //     }
+    //     if(openAndClosed !== 0) {
+    //         return false
+    //     }
+    //     return true
+    // }
+
+    // console.log(parenthesisValidator(")n(o)p(e"))
+
