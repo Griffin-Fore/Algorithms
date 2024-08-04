@@ -1316,3 +1316,49 @@
 
     // console.log(removeBlanks(" play that Funky Music "))
 
+// Get String Digits
+// Create a JavaScript function that given a string, returns the integer made from the string’s digits. Given
+// "0s1a3y5w7h9a2t4?6!8?0"​, the function should return the number 1,357,924,680.
+
+    //      I want to instantiate a string variable to hold all the numbers from the string
+    //      then I want to loop through the string and add all the number values to the new string
+    //      then I want to convert that string to a number
+
+    // function getStringDigits(string) {
+    //     let numbersOnlyString = ""
+    //     for(let i = 0; i < string.length; i++) {
+    //         if(!isNaN(string[i]) && string[i] !== ' ') {
+    //             numbersOnlyString += string[i]
+    //         }
+    //     }
+    //     return parseInt(numbersOnlyString, 10)
+    // }
+
+    // console.log(getStringDigits("1,a,2,b,3,c"))
+
+// Acronyms
+// Create a function that, given a string, returns the string’s acronym (first letters only, capitalized). Given
+// "there's no free lunch - gotta pay yer way"​, return "TNFL-GPYW"​. Given "Live
+// from New York, it's Saturday Night!"​, return "LFNYISN"​.
+
+    // T-   I need to take a string and return a capitalized acronym
+    // I-   I want to instqantiate an acronym string, 
+    //      then I want to loop through thr original string, 
+    //          add the first letter, and every time an alphabetic character is preceded by nothing or a space,
+    //          I add that character to the acronym
+    // TEST:I need to add to the acronym the first alphabetic character, not the first character period
+
+    // function acronymMaker(string) {
+    //     function isLetter(char) {
+    //         return /^[a-zA-Z]$/.test(char);
+    //     }
+    //     let acronym = []
+    //     for(let i =  0; i < string.length; i++) {
+    //         if((isLetter(string[i]) && (string[i-1] == ' ') || i == 0)) {
+    //             acronym.push(string[i].toUpperCase())
+    //         }
+    //     }
+    //     return acronym.join("")
+    // }
+
+    // console.log(acronymMaker("there's no free lunch - gotta pay yer way"))
