@@ -1405,3 +1405,46 @@
 
     // console.log(parenthesisValidator(")n(o)p(e"))
 
+// Braces Valid
+// Given a string, returns whether the sequence of
+// various parentheses, braces and brackets within
+// it are valid. For example, given the input string
+// "w(a{t}s[o(n{c}o)m]e)h[e{r}e]!"​, return
+// true​. Given "d(i{a}l[t]o)n{e"​, return
+// false​. Given "a(1)s[O(n]0{t)0}k"​, return
+// false​.
+
+    // T-   I want to validate a given combination of braces, brackets and parentheses
+    // I-   I want to create a stack, and two arrays to compare the opening and closing symbols
+    //      I also want to create an object containing key:value pairs for the matching symbols
+    //      I want to loop through the string,
+    //          and if I encounter an opening brace, add it to the stack
+    //          if I encounter a closing brace:
+    //              if the stack length is zero, or if the last item in the stack doesn't match,
+    //                  return false
+    //      If I get through all that, return true
+
+    // function validateBraces(string) {
+    //     let stack = []
+    //     let openingBraces = ["(","{","["]
+    //     let closingBraces = [")","}","]"]
+
+    //     let matches = {")":"(", "}": "{", "]": "["}
+
+    //     for(let i = 0; i < string.length; i++) {
+    //         let char = string[i]
+
+    //         if(openingBraces.includes(char)) {
+    //             stack.push(char)
+    //         }
+    //         else if(closingBraces.includes(char)) {
+    //             if(stack.length == 0 || stack.pop() !== matches[char]) {
+    //                 return false
+    //             }
+    //         }
+    //     }
+    //     return stack.length === 0
+    // }
+
+    // console.log(validateBraces("a(1)s[O(n]0{t)0}k"))
+
