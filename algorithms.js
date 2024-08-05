@@ -1448,3 +1448,28 @@
 
     // console.log(validateBraces("a(1)s[O(n]0{t)0}k"))
 
+// Is Palindrome
+// Strings like "Able was I, ere I saw
+// Elba"​ or "Madam, I'm Adam"​ could be
+// considered palindromes, because (if we ignore
+// spaces, punctuation and capitalization) the letters
+// are the same from front and back.
+
+    // T-   I want to take a string, and verify whether it is a palindrome
+    // I-   I want to loop through the string, 
+    //          and if the current point doesn't match the point with the same distance from the back,
+    //          then I return false
+    //      otherwise report true
+
+    // function isPalindrome(string) {
+    //     for(let i = 0; i < Math.floor(string.length / 2); i++) {
+    //         if(string[i] !== string[string.length-1-i]) {
+    //             return false
+    //         }
+    //     }
+    //     return true
+    // }
+
+
+    // console.log(isPalindrome("c a C"))
+
