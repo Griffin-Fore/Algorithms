@@ -1473,3 +1473,55 @@
 
     // console.log(isPalindrome("c a C"))
 
+// Longest Palindrome
+// For this challenge, we will look not only at the
+// entire string, but also substrings within it.
+// For a string, return the longest palindromic
+// substring. Given "what up, dada?"​, return
+// "dad"​. Given "not much"​, return "n"​. Include
+// spaces as well (i.e. be strict, as in the “Is
+// Palindrome” challenge): given "My favorite
+// racecar erupted!"​, return "e racecar e"​.
+
+    // I want to take a string and return the largest palindrome made from the characters
+    //      If the string is empty, I will return null
+    // I-   I want to instantiate a var for the largest palindrome and set it to the first character of the string
+    // I-   I want to instantiate an array to hold all the strings possible from the given string,
+    //      to do this, I want to do a series of loops through the string, and add each individual character, 
+    //          then every two characters, then every three, and so on until I add the entire string
+    //      then I will loop through the array and check if each item is a palindrome,
+    //      and every time the length of the palindrome is larger than the largest palindrome,
+    //          I will set the largest palindrome to the current palindrome
+    //      then I will return the largest palindrome
+
+    // function findLargestPalindrome(string) {
+    //     if(string.length == 0) {
+    //         return "Invalid: no string"
+    //     }
+    //     if(string.length == 1) {
+    //         return string[0]
+    //     }
+    //     let largestPalidrome = string[0]
+    //     let allPossibleStrings = []
+
+    // }
+
+// Book Index
+// Write a function that given a sorted array of page
+// numbers, return a string representing a book
+// index. Combine consecutive pages to create
+// ranges. Given [1, 3, 4, 5, 7, 8, 10]​,
+// return the string "1, 3-5, 7-8, 10"​.
+
+    // T-   I want to take a series of pages and return ranges of consecutive pages
+    // I-   I want to instantiate and empty array to hold the ranges, then I want to have three variables,
+    //      the start and end and next variables
+    //      I want to loop through the array, and set the start as the first index,
+    //      I want to reset the second index as every consecutive number, and when the next is not consecutive to the second,
+    //      set the first and second in a string in the array, then set the first equal to the next, and repeat
+
+    function bookIndex(pageNumbers) {
+        let index = []
+        let first = pageNumbers[0]
+        
+    }
