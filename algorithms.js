@@ -1503,8 +1503,26 @@
     //     }
     //     let largestPalidrome = string[0]
     //     let allPossibleStrings = []
-
+    //     for(let i = 0; i < string.length; i++) {
+    //         for(let j = i; j < string.length; j++) {
+    //             allPossibleStrings.push(string.slice(i, j + 1))
+    //         }
+    //     }
+    //     let allPalindromes = []
+    //     for(let k = 0; k < allPossibleStrings.length; k++) {
+    //         if(isPalindrome(allPossibleStrings[k])) {
+    //             allPalindromes.push(allPossibleStrings[k])
+    //         }
+    //     }
+    //     for(let idx = 0; idx < allPalindromes.length; idx++) {
+    //         if(allPalindromes[idx].length > largestPalidrome.length) {
+    //             largestPalidrome = allPalindromes[idx]
+    //         }
+    //     }
+    //     return largestPalidrome
     // }
+
+    // console.log(findLargestPalindrome("what up, dada?"))
 
 // Book Index
 // Write a function that given a sorted array of page
@@ -1520,8 +1538,9 @@
     //      I want to reset the second index as every consecutive number, and when the next is not consecutive to the second,
     //      set the first and second in a string in the array, then set the first equal to the next, and repeat
 
-    function bookIndex(pageNumbers) {
-        let index = []
-        let first = pageNumbers[0]
-        
-    }
+    // function bookIndex(pageNumbers) {
+    //     let index = []
+    //     let first = pageNumbers[0]
+
+    // }
+
