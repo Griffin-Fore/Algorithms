@@ -1538,8 +1538,35 @@
     //      I want to reset the second index as every consecutive number, and when the next is not consecutive to the second,
     //      set the first and second in a string in the array, then set the first equal to the next, and repeat
 
-    function bookIndex(pageNumbers) {
-        let indexes = []
+    // function bookIndex(pageNumbers) {
+    //     let indexes = []
+    //     let start = pageNumbers[0]
+    //     let end = start
         
-    }
+    //     for(let i = 0; i < pageNumbers.length; i++) {
+    //         if(pageNumbers[i] == end + 1) {
+    //             end = pageNumbers[i]
+    //         }
+    //         else {
+    //             if(start === end) {
+    //                 indexes.push(start.toString())
+    //             }
+    //             else {
+    //                 indexes.push(`${start}-${end}`)
+    //             }
+    //             start = pageNumbers[i]
+    //             end = pageNumbers[i]
+    //         }
+    //     }
+    //     if(start === end) {
+    //         indexes.push(start.toString())
+    //     }
+    //     else {
+    //         indexes.push(`${start}-${end}`)
+    //     }
+
+    //     return indexes.join(', ')
+    // }
+
+    // console.log(bookIndex([1, 3, 4, 5, 7, 8, 10]))
 
