@@ -1570,3 +1570,11 @@
 
     // console.log(bookIndex([1, 3, 4, 5, 7, 8, 10]))
 
+// Common Suffix
+// When given an array of words, returns the largest
+// suffix (word-end) that is common between all
+// words. For example, for input ["ovation",
+// "notation", "action"]​, return "tion"​.
+// Given ["nice", "ice", "sic"]​, return ""​.
+
+    
