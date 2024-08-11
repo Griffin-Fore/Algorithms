@@ -1577,4 +1577,13 @@
 // "notation", "action"]​, return "tion"​.
 // Given ["nice", "ice", "sic"]​, return ""​.
 
+    // T-   I need to take an array of strings and find the largest suffix made from those strings
+    // I-   I want to set a placeholder value for the current suffix value and an empty array to hold the completed suffix
+    //      I want to loop through given array as many times as the length of the longest string
+    //          Inside each loop, I want to create a subsequent loop where I:
+    //              compare the last value of the first string to each subsequent string
+    //              if the character at any point doesn't match the first string's character, I want to break out of both loops
+    //          if I get to the end of the loop and every last character matches, I want to add that character to the suffix array
+    //      when I complete my suffix array, I want to reverse it and turn it into a string
+
     
