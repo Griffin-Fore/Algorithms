@@ -1579,11 +1579,38 @@
 
     // T-   I need to take an array of strings and find the largest suffix made from those strings
     // I-   I want to set a placeholder value for the current suffix value and an empty array to hold the completed suffix
-    //      I want to loop through given array as many times as the length of the longest string
+    //      I want to loop through given array as many times as the length of the shortest string
     //          Inside each loop, I want to create a subsequent loop where I:
     //              compare the last value of the first string to each subsequent string
     //              if the character at any point doesn't match the first string's character, I want to break out of both loops
     //          if I get to the end of the loop and every last character matches, I want to add that character to the suffix array
     //      when I complete my suffix array, I want to reverse it and turn it into a string
 
-    
+    // function commonSuffix(array) {
+    //     let suffixLetterArray = []
+    //     let shortestString = array[0]
+    //     for(let i = 0; i < array.length; i++) {
+    //         if(array[i].length < shortestString.length) {
+    //             shortestString = array[i]
+    //         }
+    //     }
+    //     for(let ii = 0; ii < shortestString.length; ii++) {
+    //         let currentSuffixLetter = shortestString[shortestString.length -1 - ii]
+
+    //         for(let iii = 0; iii < array.length; iii++) {
+    //             if(currentSuffixLetter !== array[iii][array[iii].length - 1 - ii]) {
+    //                 for(let i4 = 0; i4 < Math.floor(suffixLetterArray.length / 2); i4++ ) {
+    //                     let temp = suffixLetterArray[i4]
+    //                     suffixLetterArray[i4] = suffixLetterArray[suffixLetterArray.length - 1 - i4]
+    //                     suffixLetterArray[suffixLetterArray.length - 1 - i4] = temp
+    //                 }
+    //                 return suffixLetterArray.join("")
+    //             }
+    //         }
+    //         suffixLetterArray.push(currentSuffixLetter)
+    //     }
+    //     return suffixLetterArray.reverse().join("")
+    // }
+
+    // console.log(commonSuffix(["nice", "ice", "sic"]))
+
