@@ -1614,3 +1614,23 @@
 
     // console.log(commonSuffix(["nice", "ice", "sic"]))
 
+// string1.concat(string2,...,stringX)​ - Add string(s) to end of existing one. Return new string.
+
+    // T-   I want to concatenate multiple strings into a new string
+    // I-   I want to create an array, then I want to loop through all the strings,
+    //          and in each loop, an inner loop where I loop through all the characters,
+    //          each inner loop, I want to push to the array,
+    //      then I want to convert the array into a string, and return it.
+
+    // function concat(string1, strings) {
+    //     let concatenatedStringArray = [string1]
+    //     for(let i = 0; i < strings.length; i++) {
+    //         for(let ii = 0; ii < strings[i].length; ii++) {
+    //             concatenatedStringArray.push(strings[i][ii])
+    //         }
+    //     }
+    //     return concatenatedStringArray.join("")
+    // }
+
+    // console.log(concat("I'm ",["a ", "Barbie ", "Girl"]))
+
