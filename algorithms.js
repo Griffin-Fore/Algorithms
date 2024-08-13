@@ -1634,3 +1634,38 @@
 
     // console.log(concat("I'm ",["a ", "Barbie ", "Girl"]))
 
+// string.search(val)​ - Search string for val. Return position of match (-1 if not found).
+// Bonus: hacker cred for implementing regular expression support!
+
+    // T-   I need to implement a search function to check if a character is in a given string
+    // I-   I want to loop through the string,
+    //          and compare each character to the given value,
+    //          and if the value is equal to the character, 
+    //              return the position in the string where I found the value
+    //      and if I do not find the value, return negative one
+
+    // function search(string, val) {
+    //     for(let i = 0; i < string.length; i++) {
+    //         if(string[i] == val) {
+    //             return i
+    //         }
+    //     }
+    //     return -1
+    // }
+
+    // console.log(search("Pineapple","0"))
+
+// string.slice(start,end)​ - Extract part of a string and return in a new one. Start and end are
+// indices into the string, with the first character at index 0. End
+// param is optional and if present, refers to one beyond the last
+// character to include.
+// Bonus: include support for negative indices, representing offsets
+// from string-end. Example: string.slice(-1) returns the string’s last
+// character.
+
+    // T-   I want to take two indices and a string and return a string between and including the character at the first index
+    // I-   I want to take a string and two indices, and an array for the new string, 
+    //      and create a for loop with the start being the first index, and the end being the second index,
+    //      then I want to return a joined new array
+    //      if the index is negative, then set the index as the end minus the index
+
