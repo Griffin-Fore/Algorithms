@@ -1669,3 +1669,77 @@
     //      then I want to return a joined new array
     //      if the index is negative, then set the index as the end minus the index
 
+    // function slice(string, index1, index2) {
+    //     let slicedArray = []
+    //     if(index1 < 0) {
+    //         index1 = string.length+index1
+    //     }
+    //     if(index2 < 0) {
+    //         index2 = string.length+index2
+    //     }
+    //     for(let i = index1; i < index2; i++) {
+    //         slicedArray.push(string[i])
+    //     }
+    //     return slicedArray.join("")
+    // }
+
+    // console.log(slice("1234567890",-4,-2))
+
+// string.split(separator,limit)​ - Split string into array of substrings, and return the new array.
+// Separator specifies where to divide the substrings and is not
+// included in any substring. If ""​ is specified, split the string on
+// every character. Limit is optional and indicates the number of
+// splits; any additional items should not be included in the array.
+// Note: existing string is unaffected.
+
+    // T-   I need to take a string and a separator and an limit, and return a series of substrings separated by the separator,
+    //      and if there is a limit, return only the number of strings matching the limit
+    // I-   if the separator is "", I want to loop through the string and add each character to an array
+    // I-   I want to create a an array to contain arrays, and a runner for the loop
+    //      then I want to create a while loop, for while the current loop index is not the last character,
+    //      and inside the while loop, I want to initialize an empty array, then create a for loop starting at the runner,
+    //      and ending at the separator,
+    //          and in each loop, I want to add each string character to the array, and add one to the runner
+    //      then when the loop is done, join the array insto a string and push it to the main array, then add one to the runner,
+    //      to skip over the separator
+    //      And if there is a limit, the while loop is a for loop with the length being whatever the limit is
+
+    // function split(string, separator, limit) {
+    //     let allSubstrings = []
+    //     let currentIndex = 0
+    //     if(separator !== "" && !limit) {
+    //         while(currentIndex < string.length) {
+    //             let subString = []
+    //             for(let i = currentIndex; i < separator; i++) {
+    //                 subString.push(string[i])
+    //                 currentIndex++
+    //             }
+    //             subString.join("")
+    //             allSubstrings.push(subString)
+    //             currentIndex++
+    //         }
+    //     }
+    //     if(separator == "" && !limit) {
+    //         for(let i = 0; i < string.length; i++) {
+    //             allSubstrings.push(string[i])
+    //         }
+    //     }
+    //     if(separator !== "" && limit) {
+    //         for(let i = currentIndex; i < limit; i++) {
+    //             let subString = []
+    //             for(let ii = currentIndex; ii < separator; ii++) {
+    //                 subString.push(string[ii])
+    //                 currentIndex++
+    //             }
+    //             subString.join("")
+    //             allSubstrings.push(subString)
+    //             currentIndex++
+    //         }
+    //     }
+    //     if(separator == "" && limit) {
+    //         for(let i = 0; i < limit; i++) {
+    //             allSubstrings.push(string[i])
+    //         }
+    //     }
+    // }
+
