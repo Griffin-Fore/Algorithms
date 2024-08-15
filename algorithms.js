@@ -1743,3 +1743,160 @@
     //     }
     // }
 
+// The Buggy 13 part II
+
+// Print1To255()
+// Print all the integers from 1 to 255.
+// function print1to255()
+// {
+//     for (var num = 1;num <= 255;num--)
+//     {
+//         console.log(num);
+//     }
+// }
+
+// the iterator is -- when it should be ++
+
+// PrintIntsAndSum0To255()
+// Print integers from 0 to 255, and the sum so far.
+// function printSum0to255()
+// {
+//     var sum = 0;
+//     for(var num = 0;num <= 255;num++){
+//         console.log(num," Sum:",sum);
+//         sum += num;
+//     }
+// }
+
+// sum += num should be before the console log
+
+// PrintMaxOfArray(arr)
+// Print the largest element in a given array.
+// function printArrayMax(arr)
+// {
+//     if (arr.length == 0) {
+//         console.log("[ ], no max val.");
+//         return;
+//     }
+//     var max = arr[0];
+//     for (var idx = 1;idx < arr.length; idx++){
+//         if (arr[idx] > max) {
+//             max = arr[idx];
+//         }
+//         console.log("Max val:", max);
+//     }
+// }
+
+// The max value should be logged at the end, not in each loop
+
+// PrintOdds1To255()
+// Print all odd integers from 1 to 255.
+// function printOdds1to255() {
+//     var num = 1;
+//     while (num <= 255) {
+//         console.log(num);
+//         num ++= 2;
+//     }
+// }
+
+// The iterator should be num += 2, not ++= 2
+
+// PrintArrayVals(arr)
+// Print all values in a given array.
+// function printArrayValues(arr)
+// {
+//     for(var idx=0; idx<arr.length;idx++) {
+//         console.log("array[", idx,
+//         "] =", idx);
+//     }
+// }
+
+// The log should be "array[", idx,"] =", arr[idx]
+
+// PrintAverageOfArray(arr)
+// Analyze an array’s values and print the average.
+// function printArrayAverage(arr)
+// {
+//     if (arr.length == 0) {
+//         console.log("[ ], no avg val.");
+//         return;
+//     }
+//     var sum = arr[0];
+//     for (var idx = 0;idx < arr.length;idx++)
+//     {sum += arr[idx];}
+//     console.log(sum/arr.length);
+// }
+
+// In the loop, if sum starts at arr[0], the loop should start at one, and not only that,
+// sum should start with a value of zero so that the loop can start at the first index
+
+// ReturnArrayCountGreaterThanY(arr, y)
+// Given an array, return the count that is greater than Y.
+// function numGreaterThanY(arr, y) {
+//     var numGreater = 0;
+//     for (var idx = 0;idx < arr.length;idx++){
+//         if (arr[idx] > y) 
+//             { y++; }
+//     }
+//     console.log("%d values greater than %d", numGreater, y);
+// }
+
+// y++ should be numGreater++
+
+// PrintMaxMinAverageArrayVals(arr)
+// Given an array, print max, min and average values.
+// function maxMinAverage(arr)
+// {
+//     if (arr.length == 0) {
+//         console.log("[] arr, no min/max/avg");
+//         return;
+//     }
+//     var min = arr[0];
+//     var max = arr[0];
+//     var sum = arr[0];
+//     for (var idx=1; idx <= arr.length;idx++){
+//         if (arr[idx] < min) 
+//             { min = arr[idx]; }
+//         if (arr[idx] > max) 
+//             { max = arr[idx]; }
+//         sum += arr[idx];
+//     }
+//     console.log("Max val:", max);
+//     console.log("Min val:", min);
+//     console.log("Avg val:", sum/arr.length);
+//     return [max, min, avg];
+// }
+// sum should start at 0, the loop should start at 0, everything else is right
+
+// SquareArrayVals(arr)
+// Given an array, square each value in the array.
+// function squareArrVals(arr) {
+//     for (idx = 0; idx < arr.length; idx++) {
+//         arr[idx] = arr[idx * idx];
+//     }
+// }
+
+// First of all, there is no return, second of all, arr[idx] should be arr[idx] * arr[idx]
+
+// ZeroOutArrayNegativeVals(arr)
+// Given an array, set negative values to zero.
+// function setNegsToZero(arr) {
+//     for (var idx = 1;idx < arr.length;idx++){
+//         if (arr[idx] < 0) {
+//             arr[idx] = 0;
+//         }
+//     }
+// }
+
+// There is no return of arr, and the index should start at 0
+
+// ShiftArrayValsLeft(arr)
+// Given an array, shift values leftward by one. Drop first values and leave extra '0'​ value(s) at end.
+function arrShift(arr) {
+    for (var idx = 1;idx < arr.length;idx++) {
+        arr[idx + 1] = arr[idx];
+    }
+    arr[arr.length - 1] = 0;
+    return arr;
+}
+
