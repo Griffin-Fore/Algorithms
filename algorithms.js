@@ -1888,15 +1888,33 @@
 //     }
 // }
 
+// Errors
 // There is no return of arr, and the index should start at 0
 
 // ShiftArrayValsLeft(arr)
 // Given an array, shift values leftward by one. Drop first values and leave extra '0'​ value(s) at end.
-function arrShift(arr) {
-    for (var idx = 1;idx < arr.length;idx++) {
-        arr[idx + 1] = arr[idx];
-    }
-    arr[arr.length - 1] = 0;
-    return arr;
-}
+// function arrShift(arr) {
+//     for (var idx = 1;idx < arr.length;idx++) {
+//         arr[idx + 1] = arr[idx];
+//     }
+//     arr[arr.length - 1] = 0;
+//     return arr;
+// }
+// Errors
+// idx should start at 0, idx should end at <arr.length-1
+// arr[idx] should = arr[idx+1]
 
+// SwapStringForArrayNegativeVals(arr)
+// Given an array, replace negative values with 'Dojo'​.
+// function subStringForNegs(arr) {
+//     for (var idx = 0;idx < arr.length;idx++) {
+//         if (arr[idx] <= 0) {
+//             arr[idx] = "Dojo";
+//         }
+//     }
+//     return arr;
+// }
+// Errors:
+// the if is for less than or equal to zero, when it should be zero
+
+// Chapter 4: Linked Lists
