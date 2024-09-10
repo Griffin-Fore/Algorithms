@@ -1918,31 +1918,3 @@
 // the if is for less than or equal to zero, when it should be zero
 
 // Chapter 4: Linked Lists
-
-// Still working on it again again again again again again
-
-// Still researching
-
-// More research
-
-// Last research finally done
-
-// I've made progress
-
-// I've made more progress
-
-// And more progress
-
-// And yet more progress
-
-// Last progress
-
-// I made progress
-
-// I made more progress today
-
-// I made even more progress today
-
-// I still didn't make any progress
-
-// I need to make progress again
