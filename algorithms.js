@@ -1921,4 +1921,4 @@
 
 // Part 1:
 
-// Algorithms
+// Algorithms of part 1
