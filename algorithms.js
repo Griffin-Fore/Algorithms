@@ -1918,6 +1918,3 @@
 // the if is for less than or equal to zero, when it should be zero
 
 // Chapter 4: Linked Lists:
-
-// Part 1:
-
