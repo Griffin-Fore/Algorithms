@@ -1921,3 +1921,9 @@
 
 // Part 1:
 
+// addFront
+// Given a pointer to the first node in a list, and a
+// value, create a new node, connect it to the head
+// of the list, and return a pointer to the list’s new
+// head node.
+
