@@ -1926,5 +1926,3 @@
 // value, create a new node, connect it to the head
 // of the list, and return a pointer to the list’s new
 // head node.
-
-// Code:
