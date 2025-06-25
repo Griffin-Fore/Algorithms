@@ -1866,7 +1866,7 @@
 //     console.log("Avg val:", sum/arr.length);
 //     return [max, min, avg];
 // }
-// sum should start at 0, the loop should start at 0, everything else is right
+// sum should start at 0, the loop should start at 0, avg is needed from division of sum by length, everything else is right
 
 // SquareArrayVals(arr)
 // Given an array, square each value in the array.
@@ -1926,5 +1926,3 @@
 // value, create a new node, connect it to the head
 // of the list, and return a pointer to the list’s new
 // head node.
-
-// Code
